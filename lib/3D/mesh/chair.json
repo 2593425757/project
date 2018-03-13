@@ -1,0 +1,42 @@
+{
+    "name": "椅子",
+    "geometry":[
+    	{
+    		"type":"boxGeometry",
+    		"parameters":{"width":1,"height":4,"depth":1},
+    		"rotation":{"x":0,"y":0,"z":0},
+    		"translate":{"x":2,"y":0,"z":2}
+    	},{
+            "type":"boxGeometry",
+            "parameters":{"width":1,"height":4,"depth":1},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":2,"y":0,"z":-2}
+        },{
+            "type":"boxGeometry",
+            "parameters":{"width":1,"height":4,"depth":1},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":-2,"y":0,"z":2}
+        },{
+            "type":"boxGeometry",
+            "parameters":{"width":1,"height":4,"depth":1},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":-2,"y":0,"z":-2}
+        },{
+            "type":"boxGeometry",
+            "parameters":{"width":5,"height":1,"depth":5},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":0,"y":2,"z":0}
+        },{
+            "type":"boxGeometry",
+            "parameters":{"width":5,"height":6,"depth":1},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":0,"y":5,"z":-2}
+        }
+    ],
+	"rotation":{"x":0,"y":0,"z":0},
+	"position_offset":{"x":0,"y":2,"z":0},
+	"material":{
+		"type":"loadTexture"
+	}
+	
+}

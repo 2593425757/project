@@ -1,0 +1,17 @@
+{
+    "name": "门",
+    "geometry":[
+    	{
+    		"type":"boxGeometry",
+    		"parameters":{"width":0.5,"height":15,"depth":8},
+    		"rotation":{"x":0,"y":0,"z":0},
+    		"translate":{"x":0,"y":0,"z":0}
+    	}
+    ],
+	"rotation":{"x":0,"y":0,"z":0},
+	"position_offset":{"x":0,"y":7.5,"z":0},
+	"material":{
+        "type":"loadTexture"
+    }
+	
+}

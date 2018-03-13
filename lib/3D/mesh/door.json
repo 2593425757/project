@@ -1,0 +1,27 @@
+{
+    "name": "门,10米宽",
+    "geometry":[
+    	{
+    		"type":"boxGeometry",
+    		"parameters":{"width":0.5,"height":20,"depth":1},
+    		"rotation":{"x":0,"y":0,"z":0},
+    		"translate":{"x":0,"y":0,"z":4}
+    	},{
+            "type":"boxGeometry",
+            "parameters":{"width":0.5,"height":5,"depth":8},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":0,"y":7.5,"z":0}
+        },{
+            "type":"boxGeometry",
+            "parameters":{"width":0.5,"height":20,"depth":1},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":0,"y":0,"z":-4}
+        }
+    ],
+	"rotation":{"x":0,"y":0,"z":0},
+	"position_offset":{"x":0,"y":10,"z":0},
+	"material":{
+        "type":"loadTexture"
+    },
+    "onClick":"console.log('a',mesh)"
+}
