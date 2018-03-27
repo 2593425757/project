@@ -1,0 +1,46 @@
+{
+  "name": "device-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "frc",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.2",
+    "file-loader": "^1.1.4",
+    "flow-bin": "^0.56.0",
+    "image-webpack-loader": "^3.4.2",
+    "react-bootstrap": "^0.31.5",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "dat.gui": "^0.7.0",
+    "element-react": "^1.4.1",
+    "element-theme-default": "^1.4.9",
+    "es6-promise-polyfill": "^1.2.0",
+    "fetch-polyfill": "^0.8.2",
+    "jquery": "^3.2.1",
+    "js-md5": "^0.7.2",
+    "md5": "^2.2.1",
+    "multer": "^1.3.0",
+    "obj-mtl-loader": "0.0.5",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-fileupload": "^2.4.0",
+    "recharts": "^1.0.0-beta.7",
+    "three": "^0.89.0"
+  }
+}
