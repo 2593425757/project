@@ -9,10 +9,11 @@
     	}
     ],
 	"rotation":{"x":0,"y":0,"z":0},
-	"position_offset":{"x":0,"y":7,"z":0},
+	"translate":{"x":0,"y":7,"z":0},
 	"material":{
         "type":"meshFaceMaterial",
-        "basicMaterial":{"color":"0x888888"}
+        "basicMaterial":{"color":"0x888888"},
+        "textureData":[{"type":"loadTexture","url":"http://localhost:3000/lib/3D/mesh/mechineBox.png","index":0}]
     }
 	
 }

@@ -1,0 +1,23 @@
+{
+    "name": "门和门框",
+    "type":"meshGroup",
+    "mesh":[{"url":"http://localhost:3000/lib/3D/mesh/door.json","name":"door"},
+        {"url":"http://localhost:3000/lib/3D/mesh/_door.json","name":"_door"}],
+    "mesh_parameters":[
+        {
+            "name":"door",
+            "id":"door",
+            "translate":{"x":0,"y":0,"z":0},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        },{
+            "name":"_door",
+            "id":"_door",
+            "translate":{"x":0,"y":0,"z":4},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        }
+    ]
+}

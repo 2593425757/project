@@ -29,9 +29,10 @@
         }
     ],
 	"rotation":{"x":0,"y":0,"z":0},
-	"position_offset":{"x":0,"y":4,"z":0},
+	"translate":{"x":0,"y":4,"z":0},
 	"material":{
-        "type":"loadTexture"
+        "type":"loadTexture",
+        "url":"http://localhost:3000/lib/3D/mesh/wood.jpg"
     }
 	
 }

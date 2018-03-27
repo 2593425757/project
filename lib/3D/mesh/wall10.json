@@ -3,15 +3,16 @@
     "geometry":[
     	{
     		"type":"boxGeometry",
-    		"parameters":{"width":0.5,"height":20,"depth":10},
+    		"parameters":{"width":0.5,"height":40,"depth":10},
     		"rotation":{"x":0,"y":0,"z":0},
     		"translate":{"x":0,"y":0,"z":0}
     	}
     ],
 	"rotation":{"x":0,"y":0,"z":0},
-	"position_offset":{"x":0,"y":10,"z":0},
+	"translate":{"x":0,"y":10,"z":0},
 	"material":{
-        "type":"loadTexture"
+        "type":"loadTexture",
+        "url":"http://localhost:3000/lib/3D/mesh/brick.jpg"
     }
 	
 }

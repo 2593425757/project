@@ -1,0 +1,22 @@
+{
+    "name": "很多桌子电脑椅子",
+    "type":"meshCollection",
+    "meshGroup":[{"url":"http://localhost:3000/lib/3D/mesh/otherObjs.json","name":"group"}],
+    "meshGroup_parameters":[
+        {
+            "name":"group",
+            "id":"group0",
+            "translate":{"x":0,"y":-10,"z":-10},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        },{
+            "name":"group",
+            "id":"group1",
+            "translate":{"x":0,"y":-10,"z":10},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        }
+    ]
+}

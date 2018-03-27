@@ -1,0 +1,31 @@
+{
+    "name": "还是桌子电脑椅子",
+    "type":"meshGroup",
+    "mesh":[{"url":"http://localhost:3000/lib/3D/mesh/desk.json","name":"desk"},
+        {"url":"http://localhost:3000/lib/3D/mesh/computer.json","name":"computer"},
+        {"url":"http://localhost:3000/lib/3D/mesh/chair.json","name":"chair"}],
+    "mesh_parameters":[
+        {
+            "name":"desk",
+            "id":"desk",
+            "translate":{"x":0,"y":0,"z":0},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        },{
+            "name":"computer",
+            "id":"computer",
+            "translate":{"x":0,"y":7,"z":0},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        },{
+            "name":"chair",
+            "id":"chair0",
+            "translate":{"x":8,"y":0,"z":0},
+            "rotation":{"x":0,"y":-1.57,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "讲台",
+    "type": "mesh",
+    "geometry":[
+    	{
+            "id":"0",
+    		"type":"boxGeometry",
+    		"parameters":{"width":10,"height":15,"depth":10},
+    		"rotation":{"x":0,"y":0,"z":0},
+    		"translate":{"x":0,"y":0,"z":0}
+    	},{
+            "id":"1",
+            "type":"boxGeometry",
+            "parameters":{"width":1,"height":3,"depth":10},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":4.5,"y":9,"z":0}
+        },{
+            "id":"2",
+            "type":"boxGeometry",
+            "parameters":{"width":1,"height":3,"depth":7},
+            "rotation":{"x":0,"y":1.57,"z":0},
+            "translate":{"x":1.5,"y":9,"z":4.5}
+        },{
+            "id":"3",
+            "type":"boxGeometry",
+            "parameters":{"width":1,"height":3,"depth":7},
+            "rotation":{"x":0,"y":1.57,"z":0},
+            "translate":{"x":1.5,"y":9,"z":-4.5}
+        }
+    ],
+	"rotation":{"x":0,"y":0,"z":0},
+	"translate":{"x":0,"y":7.5,"z":0},
+    "scale":{"x":1,"y":1,"z":1},
+	"material":{
+        "type":"loadTexture",
+        "url":"http://localhost:3000/lib/3D/mesh/wood.jpg"
+    }
+}

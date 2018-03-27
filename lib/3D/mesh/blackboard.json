@@ -1,0 +1,23 @@
+{
+    "name": "黑板",
+    "type": "mesh",
+    "geometry":[
+    	{
+            "id":"0",
+    		"type":"boxGeometry",
+    		"parameters":{"width":0.1,"height":20,"depth":70},
+    		"rotation":{"x":0,"y":0,"z":0},
+    		"translate":{"x":0,"y":0,"z":0}
+    	}
+    ],
+	"rotation":{"x":0,"y":0,"z":0},
+	"translate":{"x":0,"y":0,"z":0},
+    "scale":{"x":1,"y":1,"z":1},
+	"material":{
+        "type":"meshFaceMaterial",
+        "basicMaterial":{
+            "color":"0xdddddd"
+        },
+        "textureData":[{"type":"loadTexture","url":"http://localhost:3000/lib/3D/mesh/blackboard.jpg","index":0}]
+    }
+}
