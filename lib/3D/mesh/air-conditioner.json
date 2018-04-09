@@ -14,6 +14,18 @@
         "type":"meshFaceMaterial",
         "basicMaterial":{"color":"0xdddddd"},
         "textureData":[{"type":"loadTexture","url":"http://localhost:3000/lib/3D/mesh/air-conditioner.png","index":0}]
-    }
+    },
+    "alterId":0,
+    "alternative":[
+        {
+            "material":{
+                "type":"meshFaceMaterial",
+                "basicMaterial":{
+                    "color":"0xdddddd"
+                },
+                "textureData":[{"type":"loadTexture","url":"http://localhost:3000/lib/3D/mesh/air-conditioner-off.png","index":0}]
+            }
+        }
+    ]
 	
 }

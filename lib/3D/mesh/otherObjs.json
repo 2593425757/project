@@ -13,13 +13,6 @@
             "scale":{"x":0,"y":0,"z":0},
             "animation":false
         },{
-            "name":"computer",
-            "id":"computer",
-            "translate":{"x":0,"y":7,"z":0},
-            "rotation":{"x":0,"y":0,"z":0},
-            "scale":{"x":0,"y":0,"z":0},
-            "animation":false
-        },{
             "name":"chair",
             "id":"chair0",
             "translate":{"x":8,"y":0,"z":0},

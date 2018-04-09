@@ -1,0 +1,30 @@
+{
+    "name": "抽屉",
+    "geometry":[
+    	{
+    		"type":"boxGeometry",
+    		"parameters":{"width":10,"height":5,"depth":10},
+    		"rotation":{"x":0,"y":0,"z":0},
+    		"translate":{"x":0,"y":0,"z":0}
+    	},{
+            "type":"boxGeometry",
+            "parameters":{"width":9,"height":4,"depth":9},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":0,"y":0.5,"z":0},
+            "op":"-"
+        }
+    ],
+	"rotation":{"x":0,"y":0,"z":0},
+	"translate":{"x":0,"y":0,"z":0},
+	"material":{
+        "type":"loadTexture",
+        "url":"http://localhost:3000/lib/3D/mesh/wood2.jpg"
+    },
+    "alterId":0,
+    "alternative":[
+        {
+            "translate":{"x":9,"y":0,"z":0}
+        }
+    ]
+	
+}

@@ -1,0 +1,31 @@
+{
+    "name": "带窗的墙",
+    "type":"meshGroup",
+    "mesh":[{"url":"http://localhost:3000/lib/3D/mesh/wall130_window.json","name":"wall"},
+        {"url":"http://localhost:3000/lib/3D/mesh/glass.json","name":"glass"}],
+    "translate":{"x":0,"y":30,"z":0},
+    "mesh_parameters":[
+        {
+            "name":"wall",
+            "id":"wall",
+            "translate":{"x":0,"y":0,"z":0},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        },{
+            "name":"glass",
+            "id":"glass0",
+            "translate":{"x":0,"y":0,"z":30},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        },{
+            "name":"glass",
+            "id":"glass1",
+            "translate":{"x":0,"y":0,"z":-30},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        }
+    ]
+}

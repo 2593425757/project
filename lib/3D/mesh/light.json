@@ -1,5 +1,5 @@
 {
-    "name": "门框,10米宽",
+    "name": "灯",
     "geometry":[
     	{
     		"type":"boxGeometry",

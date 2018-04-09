@@ -16,6 +16,18 @@
             "color":"0xdddddd"
         },
         "textureData":[{"type":"loadTexture","url":"http://localhost:3000/lib/3D/mesh/computer.jpg","index":0}]
-    }
+    },
+    "alterId":0,
+    "alternative":[
+        {
+            "material":{
+                "type":"meshFaceMaterial",
+                "basicMaterial":{
+                    "color":"0xdddddd"
+                },
+                "textureData":[{"type":"loadTexture","url":"http://localhost:3000/lib/3D/mesh/computer_off.jpg","index":0}]
+            }
+        }
+    ]
 	
 }

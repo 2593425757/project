@@ -1,0 +1,30 @@
+{
+    "name": "投影幕布",
+    "type": "mesh",
+    "geometry":[
+    	{
+            "id":"0",
+    		"type":"boxGeometry",
+    		"parameters":{"width":0.1,"height":20,"depth":30},
+    		"rotation":{"x":0,"y":0,"z":0},
+    		"translate":{"x":0,"y":0,"z":0}
+    	}
+    ],
+	"rotation":{"x":0,"y":0,"z":0},
+	"translate":{"x":0,"y":0,"z":0},
+    "scale":{"x":1,"y":1,"z":1},
+	"material":{
+        "type":"meshFaceMaterial",
+        "basicMaterial":{
+            "color":"0xdddddd"
+        },
+        "textureData":[{"type":"loadTexture","url":"http://localhost:3000/lib/3D/mesh/screen.png","index":0}]
+    },
+    "alterId":0,
+    "alternative":[
+        {
+            "scale":{"x":0,"y":-0.9,"z":0},
+            "translate":{"x":0,"y":10,"z":0}
+        }
+    ]
+}

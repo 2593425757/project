@@ -1,0 +1,23 @@
+{
+    "name": "讲台",
+    "type":"meshGroup",
+    "mesh":[{"url":"http://localhost:3000/lib/3D/mesh/platform.json","name":"platform_bottom"},
+        {"url":"http://localhost:3000/lib/3D/mesh/platform2.json","name":"platform"}],
+    "mesh_parameters":[
+        {
+            "name":"platform_bottom",
+            "id":"platform_bottom",
+            "translate":{"x":0,"y":0,"z":0},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        },{
+            "name":"platform",
+            "id":"platform",
+            "translate":{"x":5,"y":10,"z":0},
+            "rotation":{"x":0,"y":0,"z":0},
+            "scale":{"x":0,"y":0,"z":0},
+            "animation":false
+        }
+    ]
+}

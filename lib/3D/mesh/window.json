@@ -1,5 +1,5 @@
 {
-    "name": "门框,10米宽",
+    "name": "墙10米宽",
     "geometry":[
     	{
     		"type":"boxGeometry",
@@ -8,16 +8,17 @@
     		"translate":{"x":0,"y":0,"z":0}
     	},{
             "type":"boxGeometry",
-            "parameters":{"width":0.5,"height":15,"depth":8},
+            "parameters":{"width":0.5,"height":10,"depth":7},
             "rotation":{"x":0,"y":0,"z":0},
-            "translate":{"x":0,"y":-12.5,"z":0},
+            "translate":{"x":0,"y":0,"z":0},
             "op":"-"
         }
     ],
 	"rotation":{"x":0,"y":0,"z":0},
-	"translate":{"x":0,"y":20,"z":0},
+	"translate":{"x":0,"y":10,"z":0},
 	"material":{
         "type":"loadTexture",
         "url":"http://localhost:3000/lib/3D/mesh/brick.jpg"
     }
+	
 }

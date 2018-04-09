@@ -1,11 +1,17 @@
 {
-    "name": "墙100米宽",
+    "name": "墙130米宽",
     "geometry":[
         {
             "type":"boxGeometry",
-            "parameters":{"width":0.5,"height":40,"depth":100},
+            "parameters":{"width":0.5,"height":40,"depth":130},
             "rotation":{"x":0,"y":0,"z":0},
             "translate":{"x":0,"y":0,"z":0}
+        },{
+            "type":"boxGeometry",
+            "parameters":{"width":0.5,"height":15,"depth":8},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":0,"y":-12.5,"z":50},
+            "op":"-"
         }
     ],
     "rotation":{"x":0,"y":0,"z":0},

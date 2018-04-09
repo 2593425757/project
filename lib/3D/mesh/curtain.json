@@ -1,0 +1,47 @@
+{
+    "name": "窗帘",
+    "type": "mesh",
+    "geometry":[
+    	{
+            "id":"0",
+    		"type":"boxGeometry",
+    		"parameters":{"width":0.1,"height":20,"depth":12.5},
+    		"rotation":{"x":0,"y":0,"z":0},
+    		"translate":{"x":0,"y":0,"z":6.25},
+            "scale":{"x":1,"y":1,"z":1}
+    	},{
+            "id":"1",
+            "type":"boxGeometry",
+            "parameters":{"width":0.1,"height":20,"depth":12.5},
+            "rotation":{"x":0,"y":0,"z":0},
+            "translate":{"x":0,"y":0,"z":-6.25},
+            "scale":{"x":1,"y":1,"z":1}
+        }
+    ],
+	"rotation":{"x":0,"y":0,"z":0},
+	"translate":{"x":0,"y":0,"z":0},
+    "scale":{"x":1,"y":1,"z":1},
+	"material":{
+        "type":"meshFaceMaterial",
+        "basicMaterial":{
+            "color":"0xdddddd"
+        },
+        "textureData":[{"type":"loadTexture","url":"http://localhost:3000/lib/3D/mesh/curtain.png","index":0},{"type":"loadTexture","url":"http://localhost:3000/lib/3D/mesh/curtain.png","index":1}]
+    },
+    "alterId":0,
+    "alternative":[
+        {
+            "geometry":[
+                {
+                    "id":"0",
+                    "translate":{"x":0,"y":0,"z":12.5},
+                    "parameters":{"width":0.1,"height":20,"depth":2.5}
+                },{
+                    "id":"1",
+                    "translate":{"x":0,"y":0,"z":-12.5},
+                    "parameters":{"width":0.1,"height":20,"depth":2.5}
+                }
+            ]
+        }
+    ]
+}
