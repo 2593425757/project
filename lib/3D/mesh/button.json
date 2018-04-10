@@ -1,0 +1,17 @@
+{
+    "name": "按钮",
+    "geometry":[
+    	{
+    		"type":"boxGeometry",
+    		"parameters":{"width":3,"height":3,"depth":"0.1"},
+    		"rotation":{"x":0,"y":0,"z":0},
+    		"translate":{"x":0,"y":0,"z":0}
+    	}
+    ],
+	"rotation":{"x":0,"y":0,"z":0},
+	"translate":{"x":0,"y":0,"z":0},
+	"material":{
+        "type":"loadTexture",
+        "url":"http://localhost:3000/lib/3D/mesh/button.png"
+    }
+}

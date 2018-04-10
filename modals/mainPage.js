@@ -18,6 +18,8 @@ class MainPage extends Component{
 		this.test2 = this.test2.bind(this)
 		this.test3 = this.test3.bind(this)
 		this.test4 = this.test4.bind(this)
+		this.test5 = this.test5.bind(this)
+		this.toggleScreen = this.toggleScreen.bind(this)
 	}
 	less(){
 		mainPage.setState({n:mainPage.state.n-0.1})
@@ -46,6 +48,13 @@ class MainPage extends Component{
 	test4(){
 		var {uuid,getMesh,alter} = this.test4
 		alter()
+	}
+	toggleScreen(){
+		var {alter} = this.toggleScreen
+		alter()
+	}
+	test5(mesh){
+		this.toggleScreen()
 	}
 	componentDidMount(){
 		var test = function(){
@@ -93,13 +102,6 @@ class MainPage extends Component{
 	        render();
 		}
 	}
-	
-	btnClick_wall(){
-		pickObjectByUrl(url+'wall10.json',true)
-	}
-	btnClick_door(){
-		pickObjectByUrl(url+'door.json',true)
-	}
 	btnClick_desk(){
 		pickObjectByUrl(url+'desk.json',true)
 	}
@@ -115,9 +117,6 @@ class MainPage extends Component{
 	btnClick_mechineBox(){
 		pickObjectByUrl(url+'mechineBox.json',true)
 	}
-	btnClick_glass(){
-		pickObjectByUrl(url+'glass.json')
-	}
 	btnClick_computer(){
 		pickObjectByUrl(url+'computer.json',true)
 	}
@@ -132,6 +131,7 @@ class MainPage extends Component{
 		importScene(global.jsonList)
 	}
 	render(){
+		
 		return (
 			<div >
 				<TopBar />
@@ -139,8 +139,9 @@ class MainPage extends Component{
 					<PageHeader id='page_header'>
 						页面
 					</PageHeader>
+					<div id='Stats-output' />
 					<Box style={{height:'1000px'}}>
-						<Scene camera_position={{x:150,y:150,z:0}} plane_width={300} plane_height={300} plane_position={{x:0,y:-10,z:0}} plane_rotation={{x:-Math.PI/2,y:0,z:0}} plane_materialUrl={url+'./floor.jpg'}>
+						<Scene camera_position={{x:150,y:150,z:0}} plane_width={300} plane_height={300} plane_position={{x:0,y:-10,z:0}} plane_rotation={{x:-Math.PI/2,y:0,z:0}} plane_materialUrl={url+'./floor.jpg'} stats={'Stats-output'}>
 							<T3MeshCollection url={url+'./manyObjs.json'} position={{x:30,y:3,z:0}} bind={[{func:this.test4}]} >
 								<T3MeshGroup position={{x:0,y:-6,z:0}}>
 									<T3Mesh url={url+'./computer.json'} position={{x:0,y:0,z:10}} />
@@ -152,11 +153,12 @@ class MainPage extends Component{
 								<T3Mesh url={url+'./wall130.json'} position={{x:-20,y:0,z:0}} />
 								<T3Mesh url={url+'./_door.json'} position={{x:-20,y:-10,z:54}} bind={[{func:this.test}]} />
 								<T3Mesh url={url+'./blackboard.json'} position={{x:-19,y:15,z:0}} />
-								<T3Mesh url={url+'./screen.json'} position={{x:-18,y:18,z:-15}} />
+								<T3Mesh url={url+'./screen.json'} position={{x:-18,y:18,z:-15}} bind={[{func:this.toggleScreen}]} />
 							</T3MeshGroup>
 							<T3MeshGroup url={url+'./wall_window_group.json'} position={{x:45,y:10,z:-65}} rotation={{x:0,y:1.57,z:0}}  >
 								<T3Mesh url={url+'./curtain.json'} position={{x:30,y:0,z:1}}/>
 								<T3Mesh url={url+'./curtain.json'} position={{x:-30,y:0,z:1}}/>
+								<T3Mesh url={url+'./button.json'} position={{x:50,y:0,z:1}} rotation={{x:0,y:1.57,z:0}} onClick={this.test5} />
 							</T3MeshGroup>
 							<T3MeshGroup url={url+'./wall_window_group.json'} position={{x:45,y:10,z:65}} rotation={{x:0,y:-1.57,z:0}}>
 								<T3Mesh url={url+'./curtain.json'} position={{x:30,y:0,z:-1}}/>
@@ -168,15 +170,12 @@ class MainPage extends Component{
 						</Scene>
 					</Box>
 					<Box style={{height:'200px',width:'49%'}}>
-						<button onMouseDown={this.btnClick_wall}>wall</button>
-						<button onMouseDown={this.btnClick_door}>door</button>
-						<button onMouseDown={this.btnClick_desk}>desk</button>
-						<button onMouseDown={this.btnClick_chair}>chair</button>
-						<button onMouseDown={this.btnClick__door}>_door</button>
-						<button onMouseDown={this.btnClick_air_conditioner}>air-conditioner</button>
-						<button onMouseDown={this.btnClick_mechineBox}>mechineBox</button>
-						<button onMouseDown={this.btnClick_glass}>glass</button>
-						<button onMouseDown={this.btnClick_computer}>computer</button>
+						<button onMouseDown={this.btnClick_desk}>桌子</button>
+						<button onMouseDown={this.btnClick_chair}>椅子</button>
+						<button onMouseDown={this.btnClick__door}>门</button>
+						<button onMouseDown={this.btnClick_air_conditioner}>空调</button>
+						<button onMouseDown={this.btnClick_mechineBox}>机柜</button>
+						<button onMouseDown={this.btnClick_computer}>电脑</button>
 						<button onClick={this.btnClick_saveScene}>保存场景</button>
 						<button onClick={this.btnClick_clearScene}>清空场景</button>
 						<button onClick={this.btnClick_importScene}>导入场景</button>
