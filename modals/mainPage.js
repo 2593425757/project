@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import {TopBar,Box,MapComponent,Dashboard1} from '../components'
 import {PageHeader} from 'react-bootstrap'
-import {Scene,Mesh,MeshBasicMaterial,PlaneGeometry,SpotLight,CubeGeometry,Cube,Circle,Cone,Cylinder,Icosahedron,Torus,saveScene,T3Mesh,T3MeshGroup,T3MeshCollection,importScene,clearScene} from '../lib/3D'
+import {Scene,Mesh,MeshBasicMaterial,BoxGeometry,PlaneGeometry,OctahedronGeometry,Cube,Plane,Circle,Cone,RingGeometry,Cylinder,SphereGeometry,Icosahedron,Torus,saveScene,T3Mesh,T3MeshGroup,T3MeshCollection,importScene,clearScene} from '../lib/3D'
 // import * as THREE from 'three'
 import {pickObject,pickObjectByUrl} from '../lib/3D/dragObjFunctions.js'
 var mainPage
@@ -13,7 +13,6 @@ class MainPage extends Component{
 		this.state = {
 			n:0.9
 		}
-		
 		this.test = this.test.bind(this)
 		this.test2 = this.test2.bind(this)
 		this.test3 = this.test3.bind(this)
@@ -167,6 +166,11 @@ class MainPage extends Component{
 							<T3MeshGroup url={url+'./cabinet_group.json'} position={{x:45,y:-10,z:-58}} rotation={{x:0,y:-1.57,z:0}} bind={[{func:this.test2},{func:this.test4,id:'drawer1'}]} />
 							<T3Mesh url={url+'./air-conditioner.json'} position={{x:0,y:-5,z:-50}} scale={{x:2,y:2,z:2}} rotation={{x:0,y:-1,z:0}} />
 							<T3Mesh url={url+'./fan.json'} position={{x:30,y:30,z:0}} bind={[{func:this.test3}]} />
+							<Mesh position={{x:100,y:-5,z:50}}>
+								<BoxGeometry parameters={{width:5,height:5,depth:5}} />
+								<MeshBasicMaterial parameters={{color:0x00ee00}} />
+							</Mesh>
+							<Cylinder position={{x:100,y:-5,z:40}} geometry_parameters={{height:5,radiusBottom:2,radiusTop:2}}/>
 						</Scene>
 					</Box>
 					<Box style={{height:'200px',width:'49%'}}>
